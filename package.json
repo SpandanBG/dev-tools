@@ -6,8 +6,10 @@
   "author": "SpandanBG <spandanbg@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config ./webpack.config.js",
-    "start": "yarn run build && electron ./dist/app.js"
+    "watch": "webpack --mode=development --config ./webpack.config.js --watch",
+    "build": "webpack --mode=production --config ./webpack.config.js",
+    "build:dev": "webpack --mode=development --config ./webpack.config.js",
+    "start": "electron ./dist/app.js"
   },
   "devDependencies": {
     "@types/electron": "^1.6.10",

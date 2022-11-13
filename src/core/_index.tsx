@@ -9,7 +9,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 const Index = () => {
-  return <div>Hello, world</div>;
+  return <div>Hello, world. My name is Spandan Buragohain</div>;
 }
 
 ReactDOM.render(<Index />, document.getElementById('app'));
