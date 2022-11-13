@@ -1,4 +1,5 @@
-import * as ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
 /*
  * Material UI uses Roboto font by default.
@@ -12,4 +13,9 @@ const Index = () => {
   return <div>Hello, world. My name is Spandan Buragohain</div>;
 }
 
-ReactDOM.render(<Index />, document.getElementById('app'));
+const root = createRoot(document.getElementById('app') as HTMLElement);
+root.render(
+  <StrictMode>
+    <Index />
+  </StrictMode>
+)

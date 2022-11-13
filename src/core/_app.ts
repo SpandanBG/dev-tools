@@ -9,6 +9,7 @@ function createWindow() {
     }
   });
 
+  mainWindow.removeMenu();
   mainWindow.loadFile('./_document.html');
   mainWindow.webContents.openDevTools();
 }
